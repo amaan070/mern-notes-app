@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 20px;
+}
+
+.app-shell {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.note-form,
+.note-card,
+.message {
+  border: 1px solid #dce3ec;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(25, 40, 65, 0.06);
+}
+
+.note-form {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+}
+
+.note-form label {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  border: 1px solid #ccd5e1;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+  resize: vertical;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #526d9c;
+  box-shadow: 0 0 0 3px rgba(82, 109, 156, 0.12);
+}
+
+.note-form button {
+  width: fit-content;
+  margin-top: 6px;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 18px;
+  background: #172033;
+  color: #fff;
+  font-weight: 700;
+}
+
+.note-form button:disabled,
+.delete-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.message {
+  margin-top: 18px;
+  padding: 18px;
+  color: #5f6b7a;
+}
+
+.message.error {
+  border-color: #e4bcbc;
+  color: #9b2c2c;
+}
+
+.notes-section {
+  margin-top: 34px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.section-heading span {
+  color: #697586;
+  font-size: 0.9rem;
+}
+
+.notes-list {
+  display: grid;
+  gap: 14px;
+}
+
+.note-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.note-body {
+  min-width: 0;
+}
+
+.note-body h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.note-body p {
+  margin: 0 0 12px;
+  color: #4f5c6e;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.note-body time {
+  color: #7b8797;
+  font-size: 0.82rem;
+}
+
+.delete-button {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  border: 1px solid #d9b4b4;
+  border-radius: 9px;
+  padding: 9px 13px;
+  background: #fff;
+  color: #9b2c2c;
+  font-weight: 700;
+}
+
+.empty {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 28px 14px;
+  }
+
+  .note-card {
+    flex-direction: column;
+  }
+
+  .delete-button {
+    align-self: stretch;
+  }
+}
