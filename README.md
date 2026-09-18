@@ -6,7 +6,7 @@ MERN Stack Lab Activity — Full-Stack Cloud Architectures
 
 - Name: Amaan Ahmad
 - Student ID: 2026201032
-- GitHub Repository: YOUR GITHUB REPOSITORY LINK
+- GitHub Repository: https://github.com/amaan070/mern-notes-app
 
 ## Architecture
 
