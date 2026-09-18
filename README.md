@@ -1,9 +1,5 @@
 # Student Notes CRUD Micro-App
 
-MERN Stack Lab Activity — Full-Stack Cloud Architectures
-
-## Student Details
-
 - Name: Amaan Ahmad
 - Student ID: 2026201032
 - GitHub Repository: https://github.com/amaan070/mern-notes-app
@@ -122,22 +118,16 @@ Use the returned `_id` for:
 curl -X DELETE http://localhost:5000/api/notes/NOTE_ID
 ```
 
-On Linux/macOS, replace the Windows `^` line continuation with `\`.
-
 ## Screenshots
-
-The lab requires two runtime screenshots:
 
 1. `screenshots/ui-preview.png` — browser showing at least two notes.
 2. `screenshots/delete-action.png` — browser after deleting a note, with DevTools Network showing a successful `DELETE /api/notes/:id` request.
 
-These must be captured after running the application. Do not submit fabricated screenshots as proof of runtime behavior.
-
 ## Submission
 
-Do not include either `server/node_modules/` or `client/node_modules/` in the ZIP.
+`server/node_modules/` and `client/node_modules/` is not included in the ZIP.
 
-Recommended structure:
+## Recommended structure:
 
 ```text
 notes-app/
